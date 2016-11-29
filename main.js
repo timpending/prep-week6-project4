@@ -22,8 +22,8 @@ $('td').each(function(){
 
 $('.heavy').on('click', function(){
   $('td').each(function(){
-    let tempNum = Number(this.innerHTML)
-    if (tempNum < 10 ){
+    let weight = Number(this.innerHTML)
+    if (weight < 10 ){
       $(this).parent().hide();
     }
   })
@@ -44,9 +44,11 @@ $('.hide-table').on('click', function(){
 $('#disableUs').on('click', function(e){
   e.preventDefault();
 })
-
-// $('select.dropdown').on('click', function(){
-//   $('select.dropdown').find('option')[3];
+//
+// let temp = $('select.dropdown').find('option:last')
+//
+// temp.on('click', function(){
+//   console.log(this);
 // })
 
 function countList() {
